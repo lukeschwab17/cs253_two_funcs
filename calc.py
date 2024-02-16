@@ -1,6 +1,7 @@
 # calc.py
 
 def calculate(current_value, num, clear):
+    # replace so it looks better on user interface
     if clear:
         return ''  # Clear the current value if clear button is pressed
     elif num:

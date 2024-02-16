@@ -26,7 +26,10 @@ def wordstatsindex():
     if request.method == 'POST':
         user_string = request.form['user_string']
         average_length = wordstats.average_length(user_string)
-        return render_template('wordstats.html', average_length=average_length)
+        total_words = wordstats.total_word_count(user_string)
+        total_chars = wordstats.total_char_count(user_string)
+        total_vowels = wordstats.total_vowels(user_string)
+        return render_template('wordstats.html', average_length=average_length, total_words=total_words, total_chars=total_chars, total_vowels=total_vowels)
     else:
         return render_template('wordstats.html', average_length=None)
 

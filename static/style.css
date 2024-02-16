@@ -14,14 +14,14 @@ body, html {
 .left-column {
     flex: 1; /* Adjust this value to change the width of the left column */
     padding: 20px;
-    background-color: #f2f2f2; /* Light grey background */
+    background-color: #f0f3ff; /* Light grey background */
 }
 
 /* Right column styles */
 .right-column {
     flex: 2; /* Adjust this value to change the width of the right column */
     padding: 20px;
-    background-color: #e6e6e6; /* Slightly darker grey background */
+    background-color: #15f5ba; /* Slightly darker grey background */
 }
 
 /* Responsive design: Stack columns on smaller screens */
@@ -29,4 +29,15 @@ body, html {
     .container {
         flex-direction: column;
     }
+}
+
+.button {
+  background-color: darkcyan;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
